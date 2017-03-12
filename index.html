@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>101 Reasons</title>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:300,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="reasons.js"></script>
+    <script src="script.js"></script>
+  </head>
+  
+  <body>
+    
+    <div id="title" class="view">
+      <div id="tbackground"></div>
+      <div id="tcontainer">
+        <div id="tforeground">
+          <div id="ttext">
+            <h1 id="tline1">101 Reasons</h1>
+            <h1 id="tline2">Why I Like</h1>
+            <h1 id="tline3">My Girlfriend</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <main id="main" class="view">
+      <div id="mbackground">
+        <div id="mmiddleground"></div>
+        <div id="mforeground">
+          <div id="mcontent">
+            <div id="mnumberholder">
+              <h1 id="mnumber"></h1>
+            </div>
+            <div id="mtextholder">
+              <p id="mtext"></p>
+            </div>
+              <div id="mimagesholder">
+                <div id="mimages">
+                <img id="mimage" alt="">
+                <img id="mimage2" alt="">
+                <img id="mimage3" alt="">
+              </div>
+            </div>
+          </div>
+          <div id="mfoot">
+            <a id="btnPrev" class="button"><i class="fa fa-arrow-left"></i></a>
+            <a id="btnList" class="button"><i class="fa fa-list"></i></a>
+            <a id="btnNext" class="button"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <div id="list" class="view" style="display: none;">
+      <div id="lightbox">
+        <div id="lhead" class="list">
+          <h1>101 Reasons</h1>
+        </div>
+        <div id="lbody" class="list">
+          <table id="ltable">
+          </table>
+        </div>
+        <div id="lfoot" class="list">
+          <a id="btnClose" class="button"><i class="fa fa-times fa-lg"></i></a>
+        </div>
+        <div id="lreset" class="list">
+          <a id="btnReset" class="button"><i class="fa fa-repeat fa-flip-horizontal"></i></a>
+          <p id="confirmReset" style="display: none;">Reset list? <a id="btnYes" class="button">Y</a> / <a id="btnNo" class="button">N</a></p>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      document.getElementById("title").onclick = closeTitle;
+      document.getElementById("main").onclick = randomItem;
+      document.getElementById("btnPrev").onclick = function(){viewPrev(this)};
+      document.getElementById("btnList").onclick = viewList;
+      document.getElementById("btnNext").onclick = function(){viewNext(this)};
+      document.getElementById("btnClose").onclick = closeList;
+      document.getElementById("list").onclick = closeList;
+      document.getElementById("btnReset").onclick = showConfirm;
+      document.getElementById("btnYes").onclick = restoreList;
+      document.getElementById("btnNo").onclick = hideConfirm;
+      document.getElementById("mfoot").onclick = function(event){event.stopPropagation()};
+      document.getElementById("lightbox").onclick = function(event){event.stopPropagation()};
+    </script>
+    
+  </body>
+  
+</html>
