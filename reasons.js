@@ -3,8 +3,7 @@ var list;
 function resetList() {
   list = [
     {
-      text: "Her beautiful smile. (you know she's really smiling when her face scrunches up, like this:)",
-      image: "images/smile.jpg",
+      text: "Her beautiful smile.",
       color: "#261a0c",
       color2: "#f8bc76",
       viewed: false
@@ -17,7 +16,6 @@ function resetList() {
     },
     {
       text: "Her round, pretty face.",
-      image: "images/pretty.jpg",
       color: "#16687d",
       color2: "#fad8b2",
       viewed: false
@@ -309,7 +307,6 @@ function resetList() {
     },
     {
       text: "She has parents who clearly want the best for her.",
-      image: "images/mombest.jpg",
       color: "#fdc1b6",
       color2: "#0d0d17",
       viewed: false
@@ -456,9 +453,8 @@ function resetList() {
       viewed: false
     },
     {
-      text: "She likes to wear clothes I like on our date nights.",
+      text: "She likes to wear nice clothes on our date nights.",
       image: "images/dress1.jpg",
-      image2: "images/dress2.jpg",
       color: "#000000",
       color2: "#a5000e",
       viewed: false
