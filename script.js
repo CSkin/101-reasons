@@ -1,15 +1,15 @@
 // jshint loopfunc: true
 
 // Check for existing list data
-if (window.localStorage.list) {
-  list = JSON.parse(window.localStorage.list);
+if (window.localStorage.reasons) {
+  list = JSON.parse(window.localStorage.reasons);
 } else {
   resetList();
 }
 
 // Save list changes in local storage
 function saveList() {
-  window.localStorage.list = JSON.stringify(list);
+  window.localStorage.reasons = JSON.stringify(list);
 }
 
 // Choose the index of the next item to display
