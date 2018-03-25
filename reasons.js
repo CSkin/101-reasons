@@ -418,13 +418,6 @@ function resetList() {
       viewed: false
     },
     {
-      text: "She likes to walk around the house with no pants on.",
-      image: "images/nopants.jpg",
-      color: "#f27979",
-      color2: "#f8c8a1",
-      viewed: false
-    },
-    {
       text: "She surprises me at the airport.",
       color: "#0815a6",
       color2: "#f87821",
